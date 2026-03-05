@@ -20,7 +20,7 @@ This project demonstrates web scraping, data extraction, and data storage using 
 
 Example data collected and stored in the CSV file:
 
-| Title | Brand |	Date |
+| Title | Brand | Date |
 |-------|-------|------|
 | Metal Detector Evolution of Man - Men's T-Shirt | Candymix | 2026-01-20 |
 
@@ -28,9 +28,9 @@ Example data collected and stored in the CSV file:
 
 amazon-web-scraper
 │
-├── AmazonWebScraper.ipynb
-├── AmazonWebScraperDataset.csv
-└── README.md
+├── `AmazonWebScraper.ipynb`    
+├── `AmazonWebScraperDataset.csv`
+└── `README.md`
 
 ### Files Explanation
 
@@ -71,14 +71,14 @@ amazon-web-scraper
 
 ## Example Code Snippet
 
-``` import requests
-    from bs4 import BeautifulSoup
-
-    page = requests.get(URL, headers=headers)
-    soup = BeautifulSoup(page.content, "html.parser")
-
-    title = soup.find(id="productTitle").get_text()
-    brand = soup.find(id="bylineInfo").get_text() ```
+```python
+import requests
+from bs4 import BeautifulSoup
+page = requests.get(URL, headers=headers)
+soup = BeautifulSoup(page.content, "html.parser")
+title = soup.find(id="productTitle").get_text()
+brand = soup.find(id="bylineInfo").get_text()
+```
 
 ---
 
@@ -90,7 +90,7 @@ AmazonWebScraperDataset.csv
 
 Example dataset structure:
 
-Title	   Brand	   Date
+| Title | Brand	| Date |
 
 ## Skills Demonstrated
 
